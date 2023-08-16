@@ -14,13 +14,13 @@ import lombok.ToString;
 
 public class RestaurantDto {
 
-	private int id;
+	private Long id;
 	
 	private String restaurantName;
 
 	private String email;
 
-	private int mobileNumber;
+	private String mobileNumber;
 
 //	private String password;
 

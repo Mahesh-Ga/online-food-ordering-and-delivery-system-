@@ -41,13 +41,19 @@ public class Address extends BaseEntity{
 	
 	@Column(length = 100)
     private String country;
+
 	
-	@ManyToOne
-	@JoinColumn(name = "customer_id")	
-	private Customer selectedCust;
+//	@ManyToOne
+//	@JoinColumn(name = "customer_id")	
+//	private Customer selectedCust;
 	
-	@OneToOne
-	@MapsId
-	@JoinColumn(name = "restaurant_id")
-	private Restaurant selectedRestaurant;
+//	@OneToOne
+//	@MapsId
+//	@JoinColumn(name = "restaurant_id")
+//	private Restaurant selectedRestaurant;
+	 
+// restaurant address is not needed here it should be embedded in restaurant table 
+
+
+
 }
