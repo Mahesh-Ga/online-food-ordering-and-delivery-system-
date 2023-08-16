@@ -1,4 +1,4 @@
-package com.onlinefood.pojos;
+package com.onlinefood.entities;
 
 public enum CuisineType {
 	

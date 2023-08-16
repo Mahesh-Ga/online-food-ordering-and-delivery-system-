@@ -1,4 +1,4 @@
-package com.onlinefood.pojos;
+package com.onlinefood.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
