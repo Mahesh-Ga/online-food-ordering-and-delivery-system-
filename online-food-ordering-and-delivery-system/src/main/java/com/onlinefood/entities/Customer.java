@@ -1,4 +1,4 @@
-package com.onlinefood.pojos;
+package com.onlinefood.entities;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +46,10 @@ public class Customer extends BaseEntity {
 	@OneToMany(mappedBy = "selectedCust", cascade = CascadeType.MERGE, orphanRemoval = true)
 	private List<Address> addrList = new ArrayList<>();
 	
-	@Column(name="delivery_instructions", length = 20)
-    private String deliveryInstructions;
+//	 @Column(name="delivery_instructions", length = 20)
+//   private String deliveryInstructions;
+// 	 dilivery instructions required in order table not in customer	
+	
+	
 	
 }

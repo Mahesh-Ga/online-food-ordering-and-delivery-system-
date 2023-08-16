@@ -1,4 +1,4 @@
-package com.onlinefood.pojos;
+package com.onlinefood.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -41,5 +41,11 @@ public class Restaurant extends BaseEntity {
 
 	@Column(name="fssai", length=100)
 	private String fssai;
+	
+	@Column(name="approved")
+	private boolean approved;
+
+	@Column(name="deleted")
+	private boolean deleted;
 	
 }

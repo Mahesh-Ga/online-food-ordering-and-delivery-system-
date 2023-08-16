@@ -1,4 +1,4 @@
-package com.onlinefood.pojos;
+package com.onlinefood.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -22,9 +22,5 @@ public class Menu extends BaseEntity {
 	@Column(name = "product_name", length = 100)
 	private String name;
 	
-	
-	@Column(name = "product_name", length = 100)
-	private String name;
-
-		
+			
 }
