@@ -2,6 +2,8 @@ package com.onlinefood.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -28,7 +30,6 @@ public class Restaurant extends BaseEntity {
 	@Column(length = 50)
 	private CuisineType cuisine;
 	
-
 	@Column(length = 50, unique = true, nullable = false) 
 	private String email;
 	
@@ -44,8 +45,15 @@ public class Restaurant extends BaseEntity {
 	
 	@Column(name="approved")
 	private boolean approved;
-
+	
+	@Column(name="open")
+	private boolean open;
+	
 	@Column(name="deleted")
 	private boolean deleted;
+
+	@OneToOne
+	@JoinColumn(name = "address_id")
+	private Address address;
 	
 }
