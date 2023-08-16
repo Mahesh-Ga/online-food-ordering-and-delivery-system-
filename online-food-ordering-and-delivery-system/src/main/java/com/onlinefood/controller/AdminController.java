@@ -51,6 +51,8 @@ public class AdminController {
 		return resservice.approveRestaurant(id);
 	}
 
+
+//m
 	@PutMapping("/remove/restaurant/{id}")
 	public ApiResponse removeRestaurant(@PathVariable Long id) {
 
